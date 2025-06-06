@@ -13,17 +13,10 @@ A modern authentication system implementation showcasing secure user authenticat
 
 ## Tech Stack
 
-- Frontend:
-  - React.js
-  - TypeScript
-  - Tailwind CSS
-  - React Router
-
-- Backend:
-  - Node.js
-  - Express.js
-  - MongoDB
-  - JWT
+- Node.js
+- Express.js
+- MongoDB
+- JWT
 
 ## Prerequisites
 
@@ -41,44 +34,28 @@ cd auth-flow
 
 2. Install dependencies:
 ```bash
-# Install backend dependencies
-cd backend
-npm install
-
-# Install frontend dependencies
-cd ../frontend
 npm install
 ```
 
 3. Set up environment variables:
 ```bash
-# Backend (.env)
+# .env
 PORT=5000
 MONGODB_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
 EMAIL_SERVICE=your_email_service
 EMAIL_USER=your_email
 EMAIL_PASSWORD=your_email_password
-
-# Frontend (.env)
-REACT_APP_API_URL=http://localhost:5000
 ```
 
 ## Running the Application
 
-1. Start the backend server:
+Start the server:
 ```bash
-cd backend
 npm run dev
 ```
 
-2. Start the frontend application:
-```bash
-cd frontend
-npm start
-```
-
-The application will be available at `http://localhost:3000`
+The API will be available at `http://localhost:5000`
 
 ## API Endpoints
 
