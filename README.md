@@ -26,7 +26,7 @@ A modern authentication system implementation showcasing secure user authenticat
 
 - Node.js (v18 or higher)
 - MongoDB
-- npm or yarn
+- npm
 
 ## Installation
 
