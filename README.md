@@ -13,10 +13,14 @@ A modern authentication system implementation showcasing secure user authenticat
 
 ## Tech Stack
 
+### Backend
 - Node.js
 - Express.js
 - MongoDB
 - JWT
+
+### Frontend
+🚧 Coming soon! 🚧
 
 ## Prerequisites
 
@@ -76,23 +80,6 @@ The API will be available at `http://localhost:5000`
 - XSS protection
 - Input validation
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Author
 
-Facu de Lima - [GitHub Profile](https://github.com/facudelima)
-
-## Acknowledgments
-
-- Thanks to all contributors who have helped with this project
-- Special thanks to the open-source community for their invaluable tools and libraries 
+Facu de Lima - [GitHub Profile](https://github.com/facudelima) 
