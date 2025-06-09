@@ -80,6 +80,4 @@ The API will be available at `http://localhost:5000`
 - XSS protection
 - Input validation
 
-## Author
 
-Facu de Lima - [GitHub Profile](https://github.com/facudelima) 
