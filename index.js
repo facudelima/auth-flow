@@ -3,11 +3,11 @@ const helmet = require('helmet');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
-
+ 
 const authRouter = require('./routers/authRouter');
 const postsRouter = require('./routers/postsRouter');
-
-const app = express();
+ 
+const app = express(); 
 app.use(cors());
 app.use(helmet());
 app.use(cookieParser());
@@ -30,5 +30,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-	console.log('listening...');
+	console.log('listening....');
 });
