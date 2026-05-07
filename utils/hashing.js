@@ -3,7 +3,7 @@ const { hash, compare } = require('bcryptjs');
 
 exports.doHash = (value, saltValue) => {
 	const result = hash(value, saltValue);
-	return result;
+	return result; 
 };
 
 exports.doHashValidation = (value, hashedValue) => {
@@ -13,5 +13,5 @@ exports.doHashValidation = (value, hashedValue) => {
 
 exports.hmacProcess = (value, key) => {
 	const result = createHmac('sha256', key).update(value).digest('hex');
-	return result;
+	return result; 
 };
