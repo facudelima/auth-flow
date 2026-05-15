@@ -8,7 +8,7 @@ exports.getPosts = async (req, res) => {
 	try {
 		let pageNum = 0;
 		if (page <= 1) {
-			pageNum = 0;
+			pageNum = 0; 
 		} else {
 			pageNum = page - 1;
 		}
@@ -46,16 +46,16 @@ exports.singlePost = async (req, res) => {
 		console.log(error);
 	}
 };
-
+ 
 exports.createPost = async (req, res) => {
 	const { title, description } = req.body;
 	const { userId } = req.user;
 	try {
-		const { error, value } = createPostSchema.validate({
+		const { error, value } = createPostSchema.validate( {
 			title,
-			description,
+			description, 
 			userId,
-		});
+		}); 
 		if (error) {
 			return res
 				.status(401)
@@ -64,7 +64,7 @@ exports.createPost = async (req, res) => {
 
 		const result = await Post.create({
 			title,
-			description,
+			description, 
 			userId,
 		});
 		res.status(201).json({ success: true, message: 'created', data: result });
@@ -76,7 +76,7 @@ exports.createPost = async (req, res) => {
 exports.updatePost = async (req, res) => {
 	const { _id } = req.query;
 	const { title, description } = req.body;
-	const { userId } = req.user;
+	const { userId } = req.user; 
 	try {
 		const { error, value } = createPostSchema.validate({
 			title,
