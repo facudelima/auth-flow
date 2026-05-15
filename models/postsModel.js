@@ -8,13 +8,13 @@ const postSchema = mongoose.Schema(
 			trim: true,
 		},
 		description: {
-			type: String,
+			type: String, 
 			required: [true, 'description is required!'],
 			trim: true,
-		},
+		}, 
 		userId: {
-			type: mongoose.Schema.Types.ObjectId,
-			ref: 'User',
+			type: mongoose.Schema.Types.ObjectId, 
+			ref: 'User', 
 			required: true,
 		},
 	},
